@@ -119,30 +119,34 @@ a:hover {
 }
 
 /* ========== GAME DESCRIPTION STYLES ========== */
+img {
+  border: 1px solid black;
+  border-radius: 10px;
+}
 .image-center {
   display: block;
   margin: 0 auto;
   width: 250px;
 }
-.image-left {
-  float: left; 
-  margin-right: 15px;
-  width: 250px;
-}
-.image-right {
-  float: right;
-  margin-left: 15px;
-  width: 250px;
-}
-.description {
-  text-align: justify;
-  font-family: "Open Sans", sans-serif;
+.content-wrapper {
+  max-width: auto;
   margin-right: 150px;
   margin-left: 150px;
+  line-height: 1.6;
 }
-img {
-  border: 1px solid black;
-  border-radius: 10px;
+.content-wrapper p {
+  text-align: justify;
+  margin: auto;
+}
+img.float-left {
+  float: left;
+  margin: 0 1rem 1rem 0;
+  width: 250px;
+}
+img.float-right {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  width: 250px;
 }
 
 /* ========== ADAPTATIVE STYLES ========== */
@@ -166,28 +170,3 @@ img {
     margin-left: 150px;
   }
 }
-
-
-.content-wrapper {
-  max-width: auto;
-  margin-right: 150px;
-  margin-left: 150px;
-  line-height: 1.6;
-}
-.content-wrapper p {
-  text-align: justify;
-  margin: auto;
-}
-
-img.float-left {
-  float: left;
-  margin: 0 1rem 1rem 0;
-  width: 250px;
-}
-
-img.float-right {
-  float: right;
-  margin: 0 0 1rem 1rem;
-  width: 250px;
-}
-
