@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========== HEADER AND NAV BAR STYLES ========== */
+h1 { /* Logo */
+  font-family: "Honk", system-ui !important;
+  font-size: 60px;
+}
+
+.navbar {
+  display: flex;
+  width: 100%; /* Full screen width */
+}
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers text in the button */
+  flex: 1; /* Makes all buttons take equal space */
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white !important;
+  background: linear-gradient(to bottom, #FFFF99, #ff40af); /* Gradient background */
+  border: 1px solid black;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 15px; /* Rounded corners */
+  /* Text black stroke */
+    text-shadow: 
+    -1px -1px 0 black, 
+    1px -1px 0 black, 
+    -1px  1px 0 black, 
+    1px  1px 0 black;
+}
+.navbar a:hover {
+  filter: brightness(1.2);
+}
+.navbar a:active {
+  filter: brightness(0.8);
+}
+
+/* ========== BODY AND TEXT STYLES ========== */
+/* Mobile first */
+body {
+  background: linear-gradient(to bottom, #001469, #8f489c);
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px; 
+}
+
+p {
+  color: white;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.headers {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+/* ========== HYPERLINK STYLES ========== */
+a {
+  text-decoration: none;
+  color: inherit;
+} 
+a:visited {
+  color: inherit;
+}  
+a:hover {
+  text-decoration: none;
+}
+
+/* ========== 2x2 BUTTON GRID STYLES ========== */
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  grid-template-rows: repeat(2, 300px);
+  gap: 10px;
+  justify-content: center; /* Centers buttons horizontally */
+  font-family: "Open Sans", sans-serif;
+}
+.button {
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  color: white !important;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px; /* Rounded corners */
+/* Text black stroke */
+  text-shadow: 
+  -1px -1px 0 black, 
+  1px -1px 0 black, 
+  -1px  1px 0 black, 
+  1px  1px 0 black;
+}
+.button1 { background-image: url('../imgs/button_gen5.png'); }
+.button2 { background-image: url('../imgs/button_gen6.png'); }
+.button3 { background-image: url('../imgs/button_pc90s.png'); }
+.button4 { background-image: url('../imgs/button_pc2000s.png'); }
+.button:hover {
+  filter: brightness(1.2);
+  text-decoration: none;
+}
+
+/* ========== GAME DESCRIPTION STYLES ========== */
+.image-center {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+}
+.image-left {
+  float: left; 
+  margin-right: 15px;
+  width: 250px;
+}
+.image-right {
+  float: right;
+  margin-left: 15px;
+  width: 250px;
+}
+.description {
+  text-align: justify;
+  font-family: "Open Sans", sans-serif;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+img {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/* ========== ADAPTATIVE STYLES ========== */
+@media (min-width: 600px) { /* Adaptive font size for tablets */
+  body {
+    font-size: 15px;
+  }
+  .navbar a {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1024px) { /* Adaptive font size for computer monitors */
+  body {
+    font-size: 17px;
+  }
+  .navbar a {
+    font-size: 18px;
+  }
+  p {
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+}
+
+
+.content-wrapper {
+  max-width: auto;
+  margin-right: 150px;
+  margin-left: 150px;
+  line-height: 1.6;
+}
+.content-wrapper p {
+  text-align: justify;
+  margin: auto;
+}
+
+img.float-left {
+  float: left;
+  margin: 0 1rem 1rem 0;
+  width: 250px;
+}
+
+img.float-right {
+  float: right;
+  margin: 0 0 1rem 1rem;
+  width: 250px;
+}
+
