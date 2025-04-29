@@ -1,0 +1,40 @@
+@use 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to bottom, variables.$background-gradient-top, variables.$background-gradient-bottom);
+  font-family: variables.$font-main;
+  font-size: 15px;
+}
+
+p {
+  color: variables.$text-color;
+  text-align: center;
+  font-family: variables.$font-main;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.headers {
+  text-align: center;
+  font-family: variables.$font-main;
+  color: variables.$text-color;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:visited {
+    color: inherit;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}

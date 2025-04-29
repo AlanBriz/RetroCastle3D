@@ -1,0 +1,41 @@
+@use 'variables';
+
+h1 {
+  font-family: variables.$font-logo !important;
+  font-size: 60px;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: variables.$text-color !important;
+    background: linear-gradient(to bottom, variables.$primary-gradient-top, variables.$primary-gradient-bottom);
+    border: 1px solid variables.$button-border-color;
+    font-family: variables.$font-main;
+    border-radius: 15px;
+    text-shadow:
+      -1px -1px 0 black,
+      1px -1px 0 black,
+      -1px  1px 0 black,
+      1px  1px 0 black;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+
+    &:active {
+      filter: brightness(0.8);
+    }
+  }
+}

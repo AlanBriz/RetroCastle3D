@@ -1,0 +1,31 @@
+@use 'variables';
+@use 'base';
+@use 'navbar';
+@use 'buttons';
+@use 'content';
+
+/* ========== MEDIA QUERIES ========== */
+@media (min-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+
+  .navbar a {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 17px;
+  }
+
+  .navbar a {
+    font-size: 18px;
+  }
+
+  p {
+    margin-right: 150px;
+    margin-left: 150px;
+  }
+}

@@ -4,51 +4,10 @@
   box-sizing: border-box;
 }
 
-/* ========== HEADER AND NAV BAR STYLES ========== */
-h1 { /* Logo */
-  font-family: "Honk", system-ui !important;
-  font-size: 60px;
-}
-
-.navbar {
-  display: flex;
-  width: 100%; /* Full screen width */
-}
-.navbar a {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Centers text in the button */
-  flex: 1; /* Makes all buttons take equal space */
-  text-align: center;
-  padding: 12px;
-  font-size: 14px;
-  font-weight: bold;
-  text-decoration: none;
-  color: white !important;
-  background: linear-gradient(to bottom, #FFFF99, #ff40af); /* Gradient background */
-  border: 1px solid black;
-  font-family: "Open Sans", sans-serif;
-  border-radius: 15px; /* Rounded corners */
-  /* Text black stroke */
-    text-shadow: 
-    -1px -1px 0 black, 
-    1px -1px 0 black, 
-    -1px  1px 0 black, 
-    1px  1px 0 black;
-}
-.navbar a:hover {
-  filter: brightness(1.2);
-}
-.navbar a:active {
-  filter: brightness(0.8);
-}
-
-/* ========== BODY AND TEXT STYLES ========== */
-/* Mobile first */
 body {
   background: linear-gradient(to bottom, #001469, #8f489c);
   font-family: "Open Sans", sans-serif;
-  font-size: 15px; 
+  font-size: 15px;
 }
 
 p {
@@ -65,27 +24,59 @@ p {
   color: white;
 }
 
-/* ========== HYPERLINK STYLES ========== */
 a {
   text-decoration: none;
   color: inherit;
-} 
+}
 a:visited {
   color: inherit;
-}  
+}
 a:hover {
   text-decoration: none;
 }
 
-/* ========== 2x2 BUTTON GRID STYLES ========== */
+h1 {
+  font-family: "Honk", system-ui !important;
+  font-size: 60px;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+}
+.navbar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white !important;
+  background: linear-gradient(to bottom, #FFFF99, #ff40af);
+  border: 1px solid black;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 15px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.navbar a:hover {
+  filter: brightness(1.2);
+}
+.navbar a:active {
+  filter: brightness(0.8);
+}
+
 .button-container {
   display: grid;
   grid-template-columns: repeat(2, 300px);
   grid-template-rows: repeat(2, 300px);
   gap: 10px;
-  justify-content: center; /* Centers buttons horizontally */
+  justify-content: center;
   font-family: "Open Sans", sans-serif;
 }
+
 .button {
   width: 300px;
   height: 300px;
@@ -101,33 +92,41 @@ a:hover {
   cursor: pointer;
   text-decoration: none;
   text-align: center;
-  border-radius: 15px; /* Rounded corners */
-/* Text black stroke */
-  text-shadow: 
-  -1px -1px 0 black, 
-  1px -1px 0 black, 
-  -1px  1px 0 black, 
-  1px  1px 0 black;
+  border-radius: 15px;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
-.button1 { background-image: url('../imgs/button_gen5.png'); }
-.button2 { background-image: url('../imgs/button_gen6.png'); }
-.button3 { background-image: url('../imgs/button_pc90s.png'); }
-.button4 { background-image: url('../imgs/button_pc2000s.png'); }
 .button:hover {
   filter: brightness(1.2);
   text-decoration: none;
 }
 
-/* ========== GAME DESCRIPTION STYLES ========== */
+.button1 {
+  background-image: url("../imgs/button_gen5.png");
+}
+
+.button2 {
+  background-image: url("../imgs/button_gen6.png");
+}
+
+.button3 {
+  background-image: url("../imgs/button_pc90s.png");
+}
+
+.button4 {
+  background-image: url("../imgs/button_pc2000s.png");
+}
+
 img {
   border: 1px solid black;
   border-radius: 10px;
 }
+
 .image-center {
   display: block;
   margin: 0 auto;
   width: 250px;
 }
+
 .content-wrapper {
   max-width: auto;
   margin-right: 150px;
@@ -138,19 +137,21 @@ img {
   text-align: justify;
   margin: auto;
 }
+
 img.float-left {
   float: left;
   margin: 0 1rem 1rem 0;
   width: 250px;
 }
+
 img.float-right {
   float: right;
   margin: 0 0 1rem 1rem;
   width: 250px;
 }
 
-/* ========== ADAPTATIVE STYLES ========== */
-@media (min-width: 600px) { /* Adaptive font size for tablets */
+/* ========== MEDIA QUERIES ========== */
+@media (min-width: 600px) {
   body {
     font-size: 15px;
   }
@@ -158,7 +159,7 @@ img.float-right {
     font-size: 16px;
   }
 }
-@media (min-width: 1024px) { /* Adaptive font size for computer monitors */
+@media (min-width: 1024px) {
   body {
     font-size: 17px;
   }
@@ -170,3 +171,5 @@ img.float-right {
     margin-left: 150px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
