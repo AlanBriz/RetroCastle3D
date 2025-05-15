@@ -54,7 +54,7 @@ h1 {
   font-size: 14px;
   font-weight: bold;
   text-decoration: none;
-  color: white !important;
+  color: white;
   background: linear-gradient(to bottom, #FFFF99, #ff40af);
   border: 1px solid black;
   font-family: "Open Sans", sans-serif;
@@ -71,10 +71,19 @@ h1 {
 .button-container {
   display: grid;
   grid-template-columns: repeat(2, 300px);
-  grid-template-rows: repeat(2, 300px);
-  gap: 10px;
+  gap: 1rem;
   justify-content: center;
+  margin: 2rem auto;
+  padding: 1rem;
   font-family: "Open Sans", sans-serif;
+}
+.button-container img 
+{
+width: 100%;
+height: auto;
+display: block;
+border-radius: 10px;
+object-fit: cover;
 }
 
 .button {
@@ -171,5 +180,15 @@ img.float-right {
     margin-left: 150px;
   }
 }
+@media (max-width: 600px) {
+  .button-container {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 /*# sourceMappingURL=style.css.map */
