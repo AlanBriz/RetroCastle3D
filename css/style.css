@@ -40,6 +40,10 @@ h1 {
   font-size: 60px;
 }
 
+h2 {
+  color: white;
+}
+
 .navbar {
   display: flex;
   width: 100%;
@@ -193,6 +197,7 @@ img.float-right {
   }
 }
 
+/* ========== QUIZ ========== */
 #quiz-container {
   max-width: 600px;
   margin: 0 auto;
@@ -251,5 +256,58 @@ img.float-right {
   color: #ffcc00;
 }
 
+/* ========== STORE ========== */
+#store-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+}
 
+.product-card {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  width: 200px;
+  
+}
+
+.product-card img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  background-color: #00bcd4;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0097a7;
+}
+
+.cart-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#cart{
+  color:white;
+  margin-top: 20px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
